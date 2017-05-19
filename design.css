@@ -1,0 +1,156 @@
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	padding-top: 150px;
+}
+button {
+	cursor: hand;
+	color: white;
+	background-color: #3397b9;
+	display: inline-block;
+	border: 1px solid transparent;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	border-radius: 4px;
+}
+ul {
+	list-style: none;
+}
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#search_container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+	background-color: black;
+}
+#search_container button {
+	float: left;
+}
+
+#logo {
+	width: 30%;
+	float: left;
+	font-size: 38px;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+#search_container input{
+	width: 40%;
+	float: left;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	border-radius: 4px;
+}
+#commandeBar{
+	position: fixed;
+	top: 114px;
+	width: 100%;
+	padding: 10px;
+	display: block;
+	text-align: center;
+	background-color: #7F7F7F;
+	z-index: 999;
+}
+#currentPage {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: white;
+	font-size: 15px;
+}
+#commandeBar button:last-child {
+	float: right;
+	margin-right: 20px;
+}
+
+#result{
+	width: 100%;
+	margin: 0;
+	padding: 20px 0 0 20px;
+}
+#result ul li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 5px;
+}
+#result ul li img {
+	width: 200px;
+	height: 200px;
+	border-radius: 25%;
+}
+#result ul li:hover {
+	position: relative;
+	top: -4px;
+	cursor: hand;
+}
+#result ul li .watermark {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	display: none;
+}
+#result ul li.selected {
+	padding: 3px;
+}
+#result ul li.selected .watermark{
+	display: block;
+}
+#result ul li.selected img:not(.watermark){
+	border: solid 2px blue;	
+}
+
+#gallery {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	margin: 0;
+	text-align: center;
+	padding: 20px 0 0 20px;
+	background-color: black;
+}
+#galleryContainer {
+	padding: 25px;	
+}
+#galleryContainer img {
+	width: 70%;
+}
+#galleryList ul li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 5px;
+}
+#galleryList ul li img {
+	width: 200px;
+	height: 200px;
+}
+#galleryList ul li.selected {
+	padding: 3px;
+}
+#galleryList ul li.selected img {
+	border: solid 2px blue;
+}
+

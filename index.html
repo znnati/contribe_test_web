@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+	<div id="search_container" class="clear">
+		<p id="logo">CONTRIBE</p>
+		<input type="text" id="SearchText" onkeypress="return SearchOnEnter(event);">
+		<button onclick="Search(0);">Search</button>		
+	</div>
+
+	<div id="commandeBar" class="clear">
+		<button onclick="SearchPage(-1);"><<</button>
+		<span id="currentPage"></span>
+		<button onclick="SearchPage(1);">>></button>
+		<button onclick="Display();">Show in gallery</button>
+	</div>
+
+	<div id="result" class="clear"></div>
+
+	<div id="gallery" class="clear" style="display: none;">
+		<div id="galleryContainer">
+			<img id="galleryBig" src="">
+		</div>
+		<div id="galleryList" class="clear"></div>
+	</div>
+</body>
+
+
+</html
